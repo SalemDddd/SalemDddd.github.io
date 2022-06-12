@@ -244,11 +244,9 @@ span a:hover {
 
 .choose-girl {
     margin: auto;
-    max-width: 800px;
+    max-width: 700px;
     padding-top: 40px;
     display: flex;
-    padding-left: 50px;
-    padding-right: 50px;
     justify-content: space-between;
 }
 
@@ -270,14 +268,6 @@ span a:hover {
     #mission {
         font-size: 12pt;
     }
-    .zhenya img {
-        width: 100px;
-        height: 100px;
-    }
-    .sonya img {
-        width: 100px;
-        height: 100px;
-    }
 }
 
 @media screen and (max-width: 460px) {
@@ -285,19 +275,27 @@ span a:hover {
         font-size: 9pt;
     }
     .choose-girl {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         padding: 0px;
         padding-top: 40px;
     }
     .zhenya {
-        height: 50vh;
+        height: 50%;
+        width: 50%;
     }
     .sonya {
-        height: 50vh;
+        height: 50%;
+        width: 50%;
     }
     .zhenya img {
-        width: 100vw;
-        height: 50vh;
+        height: 100%;
+        width: 100%;
+    }
+    .sonya img {
+        height: 100%;
+        width: 100%;
     }
     .zhenya h1 {
         position: relative;
@@ -310,10 +308,6 @@ span a:hover {
         top: -70px;
         margin: 0;
         height: 0px;
-    }
-    .sonya img {
-        width: 100vw;
-        height: 50vh;
     }
 }
 
