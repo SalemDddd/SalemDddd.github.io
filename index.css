@@ -279,12 +279,10 @@ span a:hover {
         width: 50%;
     }
     .zhenya img {
-        border-radius: 0px;
         height: 100%;
         width: 100%;
     }
     .sonya img {
-        border-radius: 0px;
         height: 100%;
         width: 100%;
     }
@@ -310,11 +308,19 @@ span a:hover {
         font-size: 9pt;
     }
     .choose-girl {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0px;
         padding-top: 40px;
+    }
+    .zhenya {
+        height: 75%;
+        width: 75%;
+    }
+    .sonya {
+        height: 75%;
+        width: 75%;
     }
     .zhenya h1 {
         position: relative;
