@@ -293,9 +293,17 @@ span{
       padding: 0px;
       padding-top: 40px;
     }
+    .zhenya{
+      height: 50vh;
+    }
+    .sonya{
+      height: 50vh;
+    }
+
     .zhenya img{
       width: 100vw;
-      height: 100vw;
+      height: 50vh;
+      opacity: 1;
     }
     .zhenya h1{
       position: relative;
@@ -308,10 +316,11 @@ span{
       top: -70px;
       margin: 0;
       height: 0px;
+      opacity: 1;
     }
     .sonya img{
       width: 100vw;
-      height: 100vw;
+      height: 50vh;
     }
 }
 @media screen and (max-width: 310px) {
