@@ -292,21 +292,6 @@ span a:hover {
     .choose-girl {
         gap: 0px;
     }
-    h1 {
-        font-size: 30pt;
-    }
-    .mission {
-        padding: 20px;
-    }
-    #mission {
-        font-size: 12pt;
-    }
-}
-
-@media screen and (max-width: 460px) {
-    #mission {
-        font-size: 9pt;
-    }
     .choose-girl {
         flex-direction: column;
         justify-content: center;
@@ -322,6 +307,9 @@ span a:hover {
         height: 75%;
         width: 75%;
     }
+    h1 {
+        font-size: 30pt;
+    }
     .zhenya h1 {
         position: relative;
         top: -70px;
@@ -334,6 +322,22 @@ span a:hover {
         margin: 0;
         height: 0px;
     }
+
+    .mission {
+        padding: 20px;
+    }
+    #mission {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #mission {
+        font-size: 9pt;
+    }
+
+
+
 }
 
 @media screen and (max-width: 310px) {
