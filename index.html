@@ -23,60 +23,67 @@
     <div class="secondpage" id="secondpage">
         <div class="container">
             <div class="mission">
-                <p id="mission">Цель: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium nesciunt? Repellendus incidunt fugit porro reprehenderit qui, voluptates deleniti officia non provident vel, magnam recusandae corrupti inventore itaque iure dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium nesciunt? Repellendus incidunt fugit porro reprehenderit qui, voluptates deleniti officia non provident vel, magnam recusandae corrupti inventore itaque iure dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium nesciunt? Repellendus incidunt fugit porro reprehenderit qui, voluptates deleniti officia non provident vel, magnam recusandae corrupti inventore itaque iure dolore.</p>
-                <a href="#thirdpage" id="mouse"><div class='scrolldown' style="--color: white">
-                    <div class="chevrons">
-                      <div class='chevrondown'></div>
-                      <div class='chevrondown'></div>
+                <p id="mission">Цель: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium nesciunt? Repellendus incidunt fugit porro reprehenderit qui, voluptates deleniti officia non provident vel, magnam recusandae corrupti inventore itaque
+                    iure dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium nesciunt? Repellendus incidunt fugit porro reprehenderit qui, voluptates deleniti officia non provident vel, magnam recusandae corrupti inventore
+                    itaque iure dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium nesciunt? Repellendus incidunt fugit porro reprehenderit qui, voluptates deleniti officia non provident vel, magnam recusandae corrupti
+                    inventore itaque iure dolore.</p>
+                <a href="#thirdpage" id="mouse">
+                    <div class='scrolldown' style="--color: white">
+                        <div class="chevrons">
+                            <div class='chevrondown'></div>
+                            <div class='chevrondown'></div>
+                        </div>
                     </div>
-            </div></a>
+                </a>
+            </div>
+
         </div>
-        
-    </div>
-    <div class="thirdpage">
-        <div class="container">
-            <div>
-                <div class="h-thd">
-                    <h1>Выбери свою рассу:</h1>
-                </div>
-                <div class="choose-girl">
-                    <div class="zhenya">
-                        <img src="/assets//zhenya.png"/>
-                        
-                        <h1>Женя</h1>
+        <div class="thirdpage">
+            <div class="container">
+                <div>
+                    <div class="h-thd">
+                        <h1>Выбери свою рассу:</h1>
                     </div>
-                    <div class="sonya" id="thirdpage">
-                        <img src="/assets//sonya.png"/>
-                        <h1>Соня</h1>
+                    <div class="choose-girl">
+                        <div class="zhenya" onclick="window.location.href = '/zhenya.html';">
+                            <img src="/assets//zhenya.png" />
+
+                            <h1>Женя</h1>
+                        </div>
+                        <div class="sonya" id="thirdpage" onclick="window.location.href = '/sonya.html';">
+                            <img src="/assets//sonya.png" />
+                            <h1>Соня</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 <script>
     var linkNav = document.querySelectorAll('[href^="#"]'),
-    V = 1;
-for (var i = 0; i < linkNav.length; i++) {
-    linkNav[i].addEventListener('click', function(e) { 
-        e.preventDefault(); 
-        var w = window.pageYOffset, 
-            hash = this.href.replace(/[^#]*(.*)/, '$1');
-        t = document.querySelector(hash).getBoundingClientRect().top, 
-            start = null;
-        requestAnimationFrame(step); 
-        function step(time) {
-            if (start === null) start = time;
-            var progress = time - start,
-                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
-            window.scrollTo(0,r);
-            if (r != w + t) {
-                requestAnimationFrame(step)
-            } else {
-                location.hash = hash 
+        V = 1;
+    for (var i = 0; i < linkNav.length; i++) {
+        linkNav[i].addEventListener('click', function(e) {
+            e.preventDefault();
+            var w = window.pageYOffset,
+                hash = this.href.replace(/[^#]*(.*)/, '$1');
+            t = document.querySelector(hash).getBoundingClientRect().top,
+                start = null;
+            requestAnimationFrame(step);
+
+            function step(time) {
+                if (start === null) start = time;
+                var progress = time - start,
+                    r = (t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t));
+                window.scrollTo(0, r);
+                if (r != w + t) {
+                    requestAnimationFrame(step)
+                } else {
+                    location.hash = hash
+                }
             }
-        }
-    }, false);
-}
+        }, false);
+    }
 </script>
+
 </html>
