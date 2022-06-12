@@ -321,9 +321,6 @@ span a:hover {
     h1 {
         font-size: 26pt;
     }
-    .start {
-        padding-top: 60%;
-    }
     #mission {
         font-size: 8pt;
     }
@@ -333,9 +330,6 @@ span a:hover {
     h1 {
         font-size: 20pt;
         margin-bottom: 15px;
-    }
-    .start {
-        padding-top: 70%;
     }
     #mission {
         font-size: 6pt;
