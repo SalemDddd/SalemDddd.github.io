@@ -259,7 +259,7 @@ span{
         font-size: 30pt;
     }
     .start{
-        padding-top: 25%;
+        padding-top: 35%;
     }
     .mission
     {
@@ -281,11 +281,12 @@ span{
   @media screen and (max-width: 460px) {
 
     .start{
-        padding-top: 40%;
+        padding-top: 45%;
     }
     #mission{
         font-size: 9pt;
     }
+
     .choose-girl
     {
       flex-direction: column;
