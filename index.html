@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website about love</title>
+    <link href="/index.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/heart-icon_34407.ico" type="image/x-icon">
 </head>
+
 <body>
-    <a href="/second_file.html">site go to</a>
+    <div class="firstpage">
+        <div class='container'>
+            <div class="start">
+                <h1>Сайт о любви</h1>
+                <span><a href="#secondpage"></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="secondpage" id="secondpage">
+        <div class="container">
+            <div class="mission">
+                <p id="mission">Цель: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium nesciunt? Repellendus incidunt fugit porro reprehenderit qui, voluptates deleniti officia non provident vel, magnam recusandae corrupti inventore itaque iure dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium nesciunt? Repellendus incidunt fugit porro reprehenderit qui, voluptates deleniti officia non provident vel, magnam recusandae corrupti inventore itaque iure dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium nesciunt? Repellendus incidunt fugit porro reprehenderit qui, voluptates deleniti officia non provident vel, magnam recusandae corrupti inventore itaque iure dolore.</p>
+                <a href="#thirdpage" id="mouse"><div class='scrolldown' style="--color: white">
+                    <div class="chevrons">
+                      <div class='chevrondown'></div>
+                      <div class='chevrondown'></div>
+                    </div>
+            </div></a>
+        </div>
+        
+    </div>
+    <div class="thirdpage" id="thirdpage">
+        <div class="container">
+            <div>
+                <div class="h-thd">
+                    <h1>Выбери свою рассу:</h1>
+                </div>
+                <div class="choose-girl">
+                    <div class="zhenya">
+                        <img src="/assets//zhenya.png"/>
+                        <h1>Женя</h1>
+                    </div>
+                    <div class="sonya">
+                        <img src="/assets//sonya.png"/>
+                        <h1>Соня</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    var linkNav = document.querySelectorAll('[href^="#"]'),
+    V = 1;
+for (var i = 0; i < linkNav.length; i++) {
+    linkNav[i].addEventListener('click', function(e) { 
+        e.preventDefault(); 
+        var w = window.pageYOffset, 
+            hash = this.href.replace(/[^#]*(.*)/, '$1');
+        t = document.querySelector(hash).getBoundingClientRect().top, 
+            start = null;
+        requestAnimationFrame(step); 
+        function step(time) {
+            if (start === null) start = time;
+            var progress = time - start,
+                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+            window.scrollTo(0,r);
+            if (r != w + t) {
+                requestAnimationFrame(step)
+            } else {
+                location.hash = hash 
+            }
+        }
+    }, false);
+}
+</script>
 </html>
