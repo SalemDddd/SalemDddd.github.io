@@ -69,9 +69,9 @@ body {
 {
     display: flex;
     flex-direction: column;
-    padding-top: 20%;
     justify-content: center;
     align-items: center;
+    padding-top: 50vh;
 }
 h1
 {
@@ -242,11 +242,9 @@ span{
   justify-content: space-between;
 }
 .zhenya img:hover{
-  opacity: 0.9;
   transform: scale(1.1);
 }
 .sonya img:hover{
-  opacity: 0.9;
   transform: scale(1.1);
 }
 
@@ -258,9 +256,7 @@ span{
     h1{
         font-size: 30pt;
     }
-    .start{
-        padding-top: 35%;
-    }
+
     .mission
     {
         padding: 20px;
@@ -280,9 +276,7 @@ span{
 }
   @media screen and (max-width: 460px) {
 
-    .start{
-        padding-top: 45%;
-    }
+
     #mission{
         font-size: 9pt;
     }
@@ -303,7 +297,6 @@ span{
     .zhenya img{
       width: 100vw;
       height: 50vh;
-      opacity: 1;
     }
     .zhenya h1{
       position: relative;
@@ -316,7 +309,7 @@ span{
       top: -70px;
       margin: 0;
       height: 0px;
-      opacity: 1;
+
     }
     .sonya img{
       width: 100vw;
