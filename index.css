@@ -144,7 +144,7 @@ span a:hover {
     font-size: 15pt;
     min-height: 300px;
     font-family: 'Raleway', sans-serif;
-    border: 1px solid black;
+    border: 1px dashed black;
 }
 
 .scrolldown {
@@ -244,10 +244,21 @@ span a:hover {
 
 .choose-girl {
     margin: auto;
-    max-width: 700px;
+    max-width: 900px;
     padding-top: 40px;
     display: flex;
+    gap: 40px;
     justify-content: space-between;
+}
+
+.zhenya img {
+    height: 400px;
+    border-radius: 20px;
+}
+
+.sonya img {
+    height: 400px;
+    border-radius: 20px;
 }
 
 .zhenya img:hover {
@@ -258,7 +269,31 @@ span a:hover {
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 850px) {
+    .zhenya {
+        height: 50%;
+        width: 50%;
+    }
+    .sonya {
+        height: 50%;
+        width: 50%;
+    }
+    .zhenya img {
+        border-radius: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    .sonya img {
+        border-radius: 0px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 700px) {
+    .choose-girl {
+        gap: 0px;
+    }
     h1 {
         font-size: 30pt;
     }
@@ -280,22 +315,6 @@ span a:hover {
         align-items: center;
         padding: 0px;
         padding-top: 40px;
-    }
-    .zhenya {
-        height: 50%;
-        width: 50%;
-    }
-    .sonya {
-        height: 50%;
-        width: 50%;
-    }
-    .zhenya img {
-        height: 100%;
-        width: 100%;
-    }
-    .sonya img {
-        height: 100%;
-        width: 100%;
     }
     .zhenya h1 {
         position: relative;
