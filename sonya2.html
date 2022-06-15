@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonya</title>
+    <link href="/sonya.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="sonyaPhoto">
+            <img src="./assets/sonya3.jpg" width="180px" height="320px" id="sonya">
+            <p style="background-color: rgba(255,255,255,.55); padding: 20px"
+        }">Сильная любовь к тебе. Сонечка, мою любовь к тебе словами не передать, но я всё же попробую. С тобой у меня появилось желание оберегать и улучшить качество твоей жизни. мы стали с тобой близкими во всех смыслах. Стали близки эмоционально, интелектуально и физически, разделяя интересы и вкусы, совмещая привычки.</p>
+        </div>
+        <div class="love">
+            <img src="./assets/heart.svg" onClick="handle()" style="transform: rotate(-30deg);">
+            <img src="./assets/heart.svg" onClick="rabbit()" style="transform: rotate(-30deg);">
+            <img src="./assets/heart.svg" onClick="hedgehog()" style="transform: rotate(-30deg);">
+            <img src="./assets/heart.svg" onClick="handle()" style="transform: rotate(-30deg);">
+            <img src="./assets/heart.svg" onClick="handle()" style="transform: rotate(-30deg);">
+            <img src="./assets/heart.svg" onClick="handle()" style="transform: rotate(-30deg);">
+            <img src="./assets/heart.svg" onClick="handle()" style="transform: rotate(-30deg);">
+            <img src="./assets/heart.svg" onClick="handle()" style="transform: rotate(-30deg);">
+            <img src="./assets/heart.svg" onClick="handle()" style="transform: rotate(-30deg);">
+
+  
+        </div>
+
+
+
+
+
+
+
+
+        <div class="pagination">
+            <div class="item" onclick="window.location.href = '/sonya1.html'">1</div>
+            <div class="item" onclick="window.location.href = '/sonya2.html'">2</div>
+            <div class="item" onclick="window.location.href = '/sonya3.html'">3</div>
+        </div>
+    </div>
+
+
+
+    <img src="./assets/kisspng-lizard-reptile-house-geckos-sauria-blue-tailed-ski-lizard-png-transparent-image-5a71aea0aa7359.5329781315173997126982.png"
+    width="400px"
+    height="400px"
+    id="geko"
+    style="display: none;"
+    >
+</body>
+<script>
+    let geko = document.getElementById('geko')
+    
+    function handle()
+    {
+        geko.src = './assets/kisspng-lizard-reptile-house-geckos-sauria-blue-tailed-ski-lizard-png-transparent-image-5a71aea0aa7359.5329781315173997126982.png'
+        geko.style.animationName = 'run'
+        geko.style.display = ''
+        setTimeout(() => {geko.style.display = 'none';geko.style.animationName = '';},3000)
+    }
+    function rabbit()
+    {
+        geko.src = 'https://www.seekpng.com/png/full/17-172626_rabbit-white-gray-png-rabbit-png.png'
+        geko.style.animationName = 'jump'
+        geko.style.display = ''
+        setTimeout(() => {geko.style.display = 'none'; geko.style.animationName = ''; },3000)
+    }
+    function hedgehog()
+    {
+        geko.src = 'https://pngimg.com/uploads/hedgehog/hedgehog_PNG13.png'
+        geko.style.animationName = 'jump'
+        geko.style.display = ''
+        setTimeout(() => {geko.style.display = 'none'; geko.style.animationName = ''; },3000)
+    }
+
+</script>
+</html>
