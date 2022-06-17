@@ -23,10 +23,10 @@
     <div class="secondpage" id="secondpage">
         <div class="container">
             <div class="mission">
-                <p id="mission">Цель: Lorem i psum dolor sit amet consectetur adipisicing elit. Corporis, praesentium nesciunt? Repellendus incidunt fugit porro reprehenderit qui, voluptates deleniti officia non provident vel, magnam recusandae corrupti inventore itaque
-                    iure dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium nesciunt? Repellendus incidunt fugit porro reprehenderit qui, voluptates deleniti officia non provident vel, magnam recusandae corrupti inventore
-                    itaque iure dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium nesciunt? Repellendus incidunt fugit porro reprehenderit qui, voluptates deleniti officia non provident vel, magnam recusandae corrupti
-                    inventore itaque iure dolore.</p>
+                <p id="mission" style="font-size: 20pt;">Цель: Этот сайт создавался для наших любимых девочек, чтобы выразить всю свою любовь.
+                    Здесь вы увидите самые лучшие фотографии, самых красивых дам и множество комплиментов. Мы хотим,
+                    чтобы вы обратили внимание и оценили наши старания и проделанную работу. Но все труды оправданы
+                    вашей любовью к нам.</p>
                 <a href="#thirdpage" id="mouse">
                     <div class='scrolldown' style="--color: white">
                         <div class="chevrons">
@@ -44,12 +44,13 @@
                     <h1>Выбери свою рассу:</h1>
                 </div>
                 <div class="choose-girl">
-                    <div class="zhenya" onclick="setTimeout(()=>{window.location.href = '/zhenya.html';}, 200)">
-                        <img src="/assets//zhenya.png" />
+                    <div class="zhenya" onclick="setTimeout(()=>{window.location.href = '/zhenya1.html';}, 200)">
+                        <img src="/assets/zhenya.png" />
 
                         <h1>Женя</h1>
                     </div>
-                    <div class="sonya" id="thirdpage" onclick="setTimeout(()=>{window.location.href = '/sonya1.html';}, 200)">
+                    <div class="sonya" id="thirdpage"
+                        onclick="setTimeout(()=>{window.location.href = '/sonya1.html';}, 200)">
                         <img src="/assets//sonya.png" />
                         <h1>Соня</h1>
                     </div>
@@ -61,7 +62,7 @@
     var linkNav = document.querySelectorAll('[href^="#"]'),
         V = 1;
     for (var i = 0; i < linkNav.length; i++) {
-        linkNav[i].addEventListener('click', function(e) {
+        linkNav[i].addEventListener('click', function (e) {
             e.preventDefault();
             var w = window.pageYOffset,
                 hash = this.href.replace(/[^#]*(.*)/, '$1');

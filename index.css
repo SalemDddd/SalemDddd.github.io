@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -180,15 +181,18 @@ span a:hover {
         opacity: 0;
         height: 6px;
     }
+
     40% {
         opacity: 1;
         height: 10px;
     }
+
     80% {
         transform: translate(0, 20px);
         height: 10px;
         opacity: 0;
     }
+
     100% {
         height: 3px;
         opacity: 0;
@@ -228,6 +232,7 @@ span a:hover {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 0.5;
     }
@@ -274,14 +279,17 @@ span a:hover {
         height: 50%;
         width: 50%;
     }
+
     .sonya {
         height: 50%;
         width: 50%;
     }
+
     .zhenya img {
         height: 100%;
         width: 100%;
     }
+
     .sonya img {
         height: 100%;
         width: 100%;
@@ -292,30 +300,36 @@ span a:hover {
     .choose-girl {
         gap: 0px;
     }
+
     .choose-girl {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         padding: 0px;
         padding-top: 40px;
     }
+
     .zhenya {
         height: 75%;
         width: 75%;
     }
+
     .sonya {
         height: 75%;
         width: 75%;
     }
+
     h1 {
         font-size: 30pt;
     }
+
     .zhenya h1 {
         position: relative;
         top: -70px;
         margin: 0;
         height: 0px;
     }
+
     .sonya h1 {
         position: relative;
         top: -70px;
@@ -326,6 +340,7 @@ span a:hover {
     .mission {
         padding: 20px;
     }
+
     #mission {
         font-size: 12pt;
     }
@@ -344,6 +359,7 @@ span a:hover {
     h1 {
         font-size: 26pt;
     }
+
     #mission {
         font-size: 8pt;
     }
@@ -354,6 +370,7 @@ span a:hover {
         font-size: 20pt;
         margin-bottom: 15px;
     }
+
     #mission {
         font-size: 6pt;
         padding: 10px;
